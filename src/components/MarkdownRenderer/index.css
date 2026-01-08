@@ -1,0 +1,83 @@
+.markdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-bottom: 4rem;
+  color: var(--color-gray-700);
+}
+
+.markdown-content h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.markdown-content strong {
+  margin-left: 4px;
+  margin-right: 4px;
+  font-weight: bold;
+}
+
+div h2:nth-child(n + 2) {
+  margin-top: 2rem;
+}
+
+div h3:nth-child(n + 2) {
+  margin-top: 2rem;
+}
+
+div h1:nth-child(n + 2) {
+  margin-top: 2rem;
+}
+
+.markdown-content h4,
+h5,
+h6,
+h7 {
+  font-weight: medium;
+}
+
+.markdown-content img {
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--colors-stone-300);
+}
+
+.markdown-content pre {
+  width: 100%;
+  font-weight: thin;
+  background: var(--color-gray-900);
+  color: var(--color-gray-50);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.markdown-content ul {
+  list-style-type: circle;
+  padding-left: 2rem;
+}
+
+.markdown-content li {
+  list-style-type: none; /* Remove default bullet */
+  position: relative;
+  padding-left: 1.5rem; /* Space for custom bullet */
+}
+
+.markdown-content li::before {
+  content: "•"; /* Custom bullet */
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.markdown-content a {
+}
+
+.markdown-content a:hover {
+  color: var(--color-secondary);
+  cursor: pointer;
+}
